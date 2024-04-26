@@ -1,21 +1,102 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     display: flex;
     justify-content: space-around;
-    margin: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 .ingreso_datos, .visualizar {
-    width: 45%;
+    width: 48%;
+    padding: 20px;
+}
+
+.ingreso_datos {
+    background-color: #f9f9f9;
+}
+
+.ingreso_datos h2, .visualizar h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
 }
 
 .encuesta {
     border: 1px solid #ccc;
-    padding: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.encuesta p {
+    margin: 0;
     margin-bottom: 10px;
 }
 
 .encuesta button {
-    margin-top: 5px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
 }
 
-/* Otros estilos según tus preferencias */
+.encuesta button:hover {
+    background-color: #c82333;
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .ingreso_datos, .visualizar {
+        width: 100%;
+    }
+}
