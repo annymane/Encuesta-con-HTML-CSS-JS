@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <section class="ingreso_datos">
+            <h2>Contesta las siguientes preguntas</h2>
+            <form action="" id="encuestaForm">
+                <label for="pregunta1"> Ingresa tus nombres:</label>
+                <input type="text" id="pregunta1" required> <br><br>
+                <label for="pregunta2"> Ingresa tus apellidos:</label>
+                <input type="text" id="pregunta2" required> <br><br>
+                <label for="pregunta3"> Ingresa tu edad:</label>
+                <input type="number" id="pregunta3" required> <br><br>
+                <label for="pregunta4"> Ingresa tu correo:</label>
+                <input type="email" id="pregunta4" required> <br><br>
+                <button type="submit">Enviar</button>
+
+            </form>
+
+        </section>
+        <section class="visualizar">
+            <h2>Encuestas Respondidas</h2>
+            <div id="encuestasGrid"></div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>

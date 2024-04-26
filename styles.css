@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.ingreso_datos, .visualizar {
+    width: 45%;
+}
+
+.encuesta {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.encuesta button {
+    margin-top: 5px;
+}
+
+/* Otros estilos según tus preferencias */
